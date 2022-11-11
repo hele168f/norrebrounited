@@ -10,7 +10,7 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-<h2>Medarbejdere</h2>
+<h2>PRODUKTER</h2>
 <div id="holder"></div>
     <template>
       <article>     
