@@ -1,0 +1,35 @@
+/* 
+Theme Name:    Norrebro United Theme
+Template:    spacious
+Version:      1.0.8
+Description:  spacious Child Theme
+Author:     Helena Nielsen, Monique Sørensen, Emilie Hundewadt, Caroline Thomsen, Ellen Hein
+*/
+
+#main_edit {
+    background-color: #D9E0DF;
+}
+
+#header-text-nav-container-edit {
+    background-color: #304941;
+}
+
+#site-title-edit a {
+    color: white;
+}
+
+#site-navigation-edit .menu-primary-container #menu-hovedmenu li a{
+    color: white;
+}
+
+.main-navigation ul li ul {
+    background-color: #304941;
+}
+
+.menu-primary-container #menu-hovedmenu #menu-item-88 {
+    display: none;
+}
+
+.menu-primary-container #menu-hovedmenu #menu-item-80 {
+    display: none;
+}
