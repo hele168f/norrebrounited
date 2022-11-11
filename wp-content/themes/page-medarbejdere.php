@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme Index Section for our theme.
+ * Theme Page Section for our theme.
  *
  * @package ThemeGrill
  * @subpackage Spacious
@@ -20,7 +20,7 @@ get_header();
 
 	</main><!-- #main -->
 <script>
-	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/medarbejdere/";
+	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/medarbejdere";
 	let restauranter =[];
 	const restaurantTemp = document.querySelector("#holder");
 	const restaurantListe = document.querySelector("#template");
@@ -39,7 +39,7 @@ get_header();
         json.forEach((restaurant) => {
           console.log("restaurant",restaurant);
           const klon = skabelon.cloneNode(true).content;
-          klon.querySelector("h3").textContent = restaurant.lokation;
+          klon.querySelector("h3").textContent = medarbejder.navn;
           holder.appendChild(klon);
         });
       }
