@@ -20,16 +20,16 @@ get_header();
 
 	</main><!-- #main -->
 <script>
-	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/merch";
-	let merch_produkter =[];
+	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/merch/";
+	let merch =[];
 	const produktTemp = document.querySelector("#holder");
 	const produktListe = document.querySelector("#template");
 	getJson();
 	async function getJson(){
 		const response = await fetch(siteUrl);
-		merch_produkter = await response.json();
-		console.log (merch_produkter);
-		vis(merch_produkter);
+		merch = await response.json();
+		console.log (merch);
+		vis(merch);
 	}
 
 	function vis(json) {
