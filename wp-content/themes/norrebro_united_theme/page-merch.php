@@ -39,7 +39,7 @@ get_header();
         json.forEach((produkt) => {
           console.log("produkt",produkt);
           const klon = skabelon.cloneNode(true).content;
-          klon.querySelector("h3").textContent = produkt.produkt-navn;
+          klon.querySelector("h3").textContent = produkt.pris;
           holder.appendChild(klon);
         });
       }
