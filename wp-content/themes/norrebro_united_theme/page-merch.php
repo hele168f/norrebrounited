@@ -20,7 +20,7 @@ get_header();
 
 	</main><!-- #main -->
 <script>
-	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/medarbejdere";
+	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/merch";
 	let merch_produkter =[];
 	const produktTemp = document.querySelector("#holder");
 	const produktListe = document.querySelector("#template");
