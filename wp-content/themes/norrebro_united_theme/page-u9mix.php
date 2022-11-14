@@ -21,25 +21,25 @@ get_header();
 	</main><!-- #main -->
 <script>
 	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/u9mix/";
-	let kampe =[];
-	const kampTemp = document.querySelector("#holder");
-	const kampListe = document.querySelector("#template");
+	let kampe_håndbold =[];
+	const kamp_håndboldTemp = document.querySelector("#holder");
+	const kamp_håndboldListe = document.querySelector("#template");
 	getJson();
 	async function getJson(){
 		const response = await fetch(siteUrl);
-		kampe = await response.json();
-		console.log(kampe);
-		vis(kampe);
+		kampe_håndbold = await response.json();
+		console.log(kampe_håndbold);
+		vis(kampe_håndbold);
 	}
 
 	function vis(json) {
         const holder = document.querySelector("#holder");
         const skabelon = document.querySelector("template");
 
-        json.forEach((kamp) => {
-          console.log("kamp",kamp);
+        json.forEach((kamp_håndbold) => {
+          console.log("kamp_håndbold",kamp_håndbold);
           const klon = skabelon.cloneNode(true).content;
-          klon.querySelector("h3").textContent = kamp.lokation;
+          klon.querySelector("h3").textContent = kamp_håndbold.lokation;
           holder.appendChild(klon);
         });
       }
