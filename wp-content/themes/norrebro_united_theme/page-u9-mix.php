@@ -20,7 +20,7 @@ get_header();
 
 	</main><!-- #main -->
 <script>
-	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/u9-mix/";
+	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/u9mix/";
 	let kampe =[];
 	const kampTemp = document.querySelector("#holder");
 	const kampListe = document.querySelector("#template");
@@ -28,7 +28,7 @@ get_header();
 	async function getJson(){
 		const response = await fetch(siteUrl);
 		kampe = await response.json();
-		console.log (kampe);
+		console.log(kampe);
 		vis(kampe);
 	}
 
