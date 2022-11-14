@@ -33,3 +33,7 @@ Author:     Helena Nielsen, Monique Sørensen, Emilie Hundewadt, Caroline Thomse
 .menu-primary-container #menu-hovedmenu #menu-item-80 {
     display: none;
 }
+
+.has-text-align-center a {
+    color:white;
+}
