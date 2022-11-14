@@ -37,7 +37,7 @@ get_header();
         const skabelon = document.querySelector("template");
 
         json.forEach((kamp_handbold) => {
-          console.log("kamp_handbold",kamp_håndbold);
+          console.log("kamp_handbold",kamp_handbold);
           const klon = skabelon.cloneNode(true).content;
           klon.querySelector("h3").textContent = kamp_handbold.lokation;
           holder.appendChild(klon);
