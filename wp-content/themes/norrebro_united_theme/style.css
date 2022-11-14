@@ -50,3 +50,58 @@ Author:     Helena Nielsen, Monique Sørensen, Emilie Hundewadt, Caroline Thomse
     float: right;
     padding-top: 35px;
 }
+
+/* Header css */
+.main-navigation ul li ul {
+    background-color: #EE772F;
+}
+.sub-menu li a {
+    color:black;
+}
+
+
+/* footer css */
+#kontakt-info {
+    text-align: center;
+}
+
+#footer-body {
+    padding:50px;
+    background-color: #304941;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#udmeld-info {
+    text-align: center;
+}
+
+#kontakt-info p {
+    color: white;
+}
+
+#udmeld-info p {
+    color:white;
+}
+
+
+/* Knap css */
+
+.wp-block-button__link {
+    background-color: #EE772F;
+}
+
+
+/* medarbejder css  */
+#holder {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#holder img {
+    max-width: 200px;
+}
+

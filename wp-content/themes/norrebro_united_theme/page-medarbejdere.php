@@ -15,6 +15,9 @@ get_header();
     <template>
       <article>     
           <h3></h3>
+          <img src="" alt="">
+          <p class="telefon"></p>
+				<p class="email"></p>
       </article>
     </template>
 
@@ -40,6 +43,10 @@ get_header();
           console.log("medarbejder",medarbejder);
           const klon = skabelon.cloneNode(true).content;
           klon.querySelector("h3").textContent = medarbejder.navn;
+          klon.querySelector("img").src = medarbejder.profil_billede.guid;
+          klon.querySelector(".telefon").textContent = medarbejder.telefon;
+          klon.querySelector(".email").textContent = medarbejder.email;
+          
           holder.appendChild(klon);
         });
       }
