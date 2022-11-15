@@ -24,7 +24,7 @@ get_header();
 
 	</main><!-- #main -->
 <script>
-	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/medarbejdere";
+	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/medarbejdere?per_page=100";
 	let medarbejdere =[];
 	const medarbejderTemp = document.querySelector("#holder");
 	const medarbejderListe = document.querySelector("#template");
