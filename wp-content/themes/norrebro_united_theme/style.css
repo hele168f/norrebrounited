@@ -9,7 +9,8 @@ Author:     Helena Nielsen, Monique Sørensen, Emilie Hundewadt, Caroline Thomse
 /* CSS til overordnet layout. rediger ikke i dette */
 
 #main_edit {
-  background-color: #d9e0df;
+  background-color: #ecefef;
+  padding: 5%;
 }
 
 p {
@@ -125,4 +126,7 @@ p {
 
 #holder img {
   max-width: 200px;
+}
+.header-post-title-container {
+  color: #d9e0df;
 }
