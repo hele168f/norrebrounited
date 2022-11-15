@@ -15,6 +15,7 @@ get_header();
     <template>
       <article>     
           <h3></h3>
+          <p class="produkt_pris"> </p>
       </article>
     </template>
 
@@ -39,7 +40,8 @@ get_header();
         json.forEach((produkt) => {
           console.log("produkt",produkt);
           const klon = skabelon.cloneNode(true).content;
-          klon.querySelector("h3").textContent = produkt.pris;
+          klon.querySelector("h3").textContent = produkt.produkt-navn;
+          klon.querySelector(".produkt_pris").textContent = produkt.pris;
           holder.appendChild(klon);
         });
       }

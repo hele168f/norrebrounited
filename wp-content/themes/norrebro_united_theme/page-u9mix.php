@@ -14,14 +14,14 @@ get_header();
 <div id="holder"></div>
     <template>
       <article>     
-          <h3></h3>
+          <p class="lokation"></p>
       </article>
     </template>
 
 	</main><!-- #main -->
 <script>
-	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/u9mix/";
-	let u9mix =[];
+	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/u9mix?per_page=100/";
+	let kamp =[];
 	const kamp_handboldTemp = document.querySelector("#holder");
 	const kamp_handboldListe = document.querySelector("#template");
 	getJson();
@@ -39,7 +39,7 @@ get_header();
         json.forEach((kamp_handbold) => {
           console.log("kamp_handbold",kamp_handbold);
           const klon = skabelon.cloneNode(true).content;
-          klon.querySelector("h3").textContent = kamp_handbold.lokation;
+          klon.querySelector(".lokation").textContent = kamp_handbold.lokation;
           holder.appendChild(klon);
         });
       }
