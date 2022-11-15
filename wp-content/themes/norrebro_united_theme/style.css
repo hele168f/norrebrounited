@@ -6,9 +6,17 @@ Description:  spacious Child Theme
 Author:     Helena Nielsen, Monique Sørensen, Emilie Hundewadt, Caroline Thomsen, Ellen Hein
 */
 
+
+/* CSS til overordnet layout. rediger ikke i dette */
+
 #main_edit {
   background-color: #d9e0df;
 }
+
+p {
+    color:black;
+}
+
 
 #header-text-nav-container-edit {
   background-color: #304941;
@@ -53,26 +61,20 @@ Author:     Helena Nielsen, Monique Sørensen, Emilie Hundewadt, Caroline Thomse
 
 /* Tilmeldning css */
 
-.post-33 {
+/* .post-33 {
   padding: 4rem;
 }
-
-.is-layout-flow wp-block-column {
-  padding: 2rem;
-}
-
-.is-layout-flow wp-block-column has-cyan-bluish-gray-background-color has-background {
-  background-color: solid #304941;
-}
-
-.is-layout-flow wp-block-column has-cyan-bluish-gray-background-color has-background,
-p {
+ */
+.is-layout-flow .wp-block-column p {
   color: white;
 }
 
-wp-block-button {
-  margin-top: 3rem;
-  margin-left: 7rem;
+.wp-block-columns {
+    margin-bottom: 1px;
+}
+
+.is-layout-flow .wp-block-column {
+    padding: 20px;
 }
 
 /* Header css */
@@ -112,6 +114,7 @@ wp-block-button {
 
 .wp-block-button__link {
   background-color: #ee772f;
+  margin: 40px;
 }
 
 /* medarbejder css  */
