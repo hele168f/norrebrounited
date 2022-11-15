@@ -15,6 +15,7 @@ get_header();
     <template>
       <article>     
           <h3></h3>
+          <p></p>
       </article>
     </template>
 
@@ -40,6 +41,7 @@ get_header();
           console.log("produkt",produkt);
           const klon = skabelon.cloneNode(true).content;
           klon.querySelector("h3").textContent = produkt.pris;
+          klon.querySelector("p").textContent = produkt.produkt-navn;
           holder.appendChild(klon);
         });
       }

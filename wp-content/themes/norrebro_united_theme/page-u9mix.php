@@ -21,15 +21,15 @@ get_header();
 	</main><!-- #main -->
 <script>
 	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/u9mix/";
-	let u9mix =[];
+	let kampe_handbold =[];
 	const kamp_handboldTemp = document.querySelector("#holder");
 	const kamp_handboldListe = document.querySelector("#template");
 	getJson();
 	async function getJson(){
 		const response = await fetch(siteUrl);
-		u9mix = await response.json();
-		console.log(u9mix);
-		vis(u9mix);
+		kampe_handbold = await response.json();
+		console.log(kampe_handbold);
+		vis(kampe_handbold);
 	}
 
 	function vis(json) {
