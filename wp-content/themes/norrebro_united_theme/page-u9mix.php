@@ -14,7 +14,7 @@ get_header();
 <div id="holder"></div>
     <template>
       <article>     
-          <h3></h3>
+          <p class="lokation"></p>
       </article>
     </template>
 
@@ -39,7 +39,7 @@ get_header();
         json.forEach((kamp_handbold) => {
           console.log("kamp_handbold",kamp_handbold);
           const klon = skabelon.cloneNode(true).content;
-          klon.querySelector("h3").textContent = kamp_handbold.lokation;
+          klon.querySelector(".lokation").textContent = kamp_handbold.lokation;
           holder.appendChild(klon);
         });
       }
