@@ -14,10 +14,11 @@ get_header();
 <div id="holder"></div>
     <template>
       <article>     
-          <h3></h3>
+          <h4></h4>
           <img src="" alt="">
+          <p class="navn"> </p>
           <p class="telefon"></p>
-				<p class="email"></p>
+				  <p class="email"></p>
       </article>
     </template>
 
@@ -42,8 +43,9 @@ get_header();
         json.forEach((medarbejder) => {
           console.log("medarbejder",medarbejder);
           const klon = skabelon.cloneNode(true).content;
-          klon.querySelector("h3").textContent = medarbejder.navn;
+          klon.querySelector("h4").textContent = medarbejder.arbejdsposition;
           klon.querySelector("img").src = medarbejder.profil_billede.guid;
+          klon.querySelector(".navn").textContent = medarbejder.navn;
           klon.querySelector(".telefon").textContent = medarbejder.telefon;
           klon.querySelector(".email").textContent = medarbejder.email;
           
