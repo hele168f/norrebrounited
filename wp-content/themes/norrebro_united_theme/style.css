@@ -7,101 +7,101 @@ Author:     Helena Nielsen, Monique Sørensen, Emilie Hundewadt, Caroline Thomse
 */
 
 #main_edit {
-    background-color: #D9E0DF;
+  background-color: #ecefef;
+  padding: 5%;
 }
 
 #header-text-nav-container-edit {
-    background-color: #304941;
+  background-color: #304941;
 }
 
 #site-title-edit a {
-    color: white;
+  color: white;
 }
 
-#site-navigation-edit .menu-primary-container #menu-hovedmenu li a{
-    color: white;
+#site-navigation-edit .menu-primary-container #menu-hovedmenu li a {
+  color: white;
 }
 
 .main-navigation ul li ul {
-    background-color: #304941;
+  background-color: #304941;
 }
 
 .menu-primary-container #menu-hovedmenu #menu-item-88 {
-    display: none;
+  display: none;
 }
 
 .menu-primary-container #menu-hovedmenu #menu-item-80 {
-    display: none;
+  display: none;
 }
 
 .has-text-align-center a {
-    color:white;
+  color: white;
 }
 
 #header-logo-image a img {
-    max-width: 100px;
+  max-width: 100px;
 }
 #header-text {
-    float: left;
-    padding: 30px 20px 0 0;
+  float: left;
+  padding: 30px 20px 0 0;
 }
 
 .main-navigation {
-    float: right;
-    padding-top: 35px;
+  float: right;
+  padding-top: 35px;
 }
 
 /* Header css */
 .main-navigation ul li ul {
-    background-color: #EE772F;
+  background-color: #ee772f;
 }
 .sub-menu li a {
-    color:black;
+  color: black;
 }
-
 
 /* footer css */
 #kontakt-info {
-    text-align: center;
+  text-align: center;
 }
 
 #footer-body {
-    padding:50px;
-    background-color: #304941;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+  padding: 50px;
+  background-color: #304941;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
 #udmeld-info {
-    text-align: center;
+  text-align: center;
 }
 
 #kontakt-info p {
-    color: white;
+  color: white;
 }
 
 #udmeld-info p {
-    color:white;
+  color: white;
 }
-
 
 /* Knap css */
 
 .wp-block-button__link {
-    background-color: #EE772F;
+  background-color: #ee772f;
 }
-
 
 /* medarbejder css  */
 #holder {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 #holder img {
-    max-width: 200px;
+  max-width: 200px;
 }
-
+.header-post-title-container {
+  color: #ecefef;
+}
