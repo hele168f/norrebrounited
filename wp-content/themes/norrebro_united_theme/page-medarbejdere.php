@@ -14,13 +14,17 @@ get_header();
 <div id="holder"></div>
     <template>
       <article>     
-          <h3></h3>
+          <h4></h4>
+          <img src="" alt="">
+          <p class="navn"> </p>
+          <p class="telefon"></p>
+				  <p class="email"></p>
       </article>
     </template>
 
 	</main><!-- #main -->
 <script>
-	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/medarbejdere";
+	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/medarbejdere?per_page=100";
 	let medarbejdere =[];
 	const medarbejderTemp = document.querySelector("#holder");
 	const medarbejderListe = document.querySelector("#template");
@@ -39,7 +43,12 @@ get_header();
         json.forEach((medarbejder) => {
           console.log("medarbejder",medarbejder);
           const klon = skabelon.cloneNode(true).content;
-          klon.querySelector("h3").textContent = medarbejder.navn;
+          klon.querySelector("h4").textContent = medarbejder.arbejdsposition;
+          klon.querySelector("img").src = medarbejder.profil_billede.guid;
+          klon.querySelector(".navn").textContent = medarbejder.navn;
+          klon.querySelector(".telefon").textContent = medarbejder.telefon;
+          klon.querySelector(".email").textContent = medarbejder.email;
+          
           holder.appendChild(klon);
         });
       }
