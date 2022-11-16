@@ -20,7 +20,7 @@ get_header();
 
 	</main><!-- #main -->
 <script>
-	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/u9mix/";
+	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/kampprogram/";
 	let kampe_handbold =[];
 	const kamp_handboldTemp = document.querySelector("#holder");
 	const kamp_handboldListe = document.querySelector("#template");
