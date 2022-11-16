@@ -317,7 +317,7 @@ if ( ! function_exists( 'spacious_breadcrumb' ) ) :
 
 		} elseif ( function_exists( 'yoast_breadcrumb' ) ) { // SEO by Yoast
 			yoast_breadcrumb(
-				'<div class="breadcrumb">' . '<span class="breadcrumb-title">' . wp_kses_post( get_theme_mod( 'spacious_custom_breadcrumb_text', __( 'You are here: ', 'spacious' ) ) ) . '</span>',
+				'<div class="breadcrumb">' . '<span class="breadcrumb-title">' . wp_kses_post( get_theme_mod( 'spacious_custom_breadcrumb_text', __( 'Du er her: ', 'spacious' ) ) ) . '</span>',
 				'</div> <!-- .breadcrumb : Yoast -->'
 			);
 		}

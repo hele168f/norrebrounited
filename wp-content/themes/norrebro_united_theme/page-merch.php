@@ -9,22 +9,23 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main-merch">
 <h2>PRODUKTER</h2>
 <div id="holder"></div>
     <template>
-      <article>     
-          <h3></h3>
+      <article>  
+          <img src="" alt="">   
+          <h4></h4>
           <p class="produkt_pris"> </p>
       </article>
     </template>
 
 	</main><!-- #main -->
 <script>
-	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/merch/";
+	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/merch/?per_page=100";
 	let merch =[];
-	const produktTemp = document.querySelector("#holder");
-	const produktListe = document.querySelector("#template");
+	const merchTemp = document.querySelector("#holder");
+	const merchListe = document.querySelector("#template");
 	getJson();
 	async function getJson(){
 		const response = await fetch(siteUrl);
@@ -37,14 +38,15 @@ get_header();
         const holder = document.querySelector("#holder");
         const skabelon = document.querySelector("template");
 
-        json.forEach((produkt) => {
-          console.log("produkt",produkt);
+        json.forEach((merch) => {
+          console.log("merch",merch);
           const klon = skabelon.cloneNode(true).content;
-          klon.querySelector("h3").textContent = produkt.produkt-navn;
-          klon.querySelector(".produkt_pris").textContent = produkt.pris;
+          klon.querySelector("img").src = merch.billede.guid;
+          klon.querySelector("h4").textContent = merch.produkt-navn;
+          klon.querySelector(".produkt_pris").textContent = merch.pris;
           holder.appendChild(klon);
         });
       }
 </script>
 
-get_footer();
+<?php get_footer(); ?>
