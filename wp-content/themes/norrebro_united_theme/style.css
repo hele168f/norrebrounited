@@ -60,10 +60,6 @@ p {
 
 /* Tilmeldning css */
 
-/* .post-33 {
-  padding: 4rem;
-}
- */
 .is-layout-flow .wp-block-column p {
   color: white;
 }
@@ -72,8 +68,17 @@ p {
   margin-bottom: 1px;
 }
 
+.is-layout-flex .wp-container-10 {
+  margin-top: 2rem;
+}
+
 .is-layout-flow .wp-block-column {
-  padding: 20px;
+  width: 100%;
+  padding: 10px;
+}
+
+.is-layout-flow .wp-block-column p {
+  color: white;
 }
 
 /* Header css */
