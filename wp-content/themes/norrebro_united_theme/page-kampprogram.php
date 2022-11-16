@@ -13,14 +13,17 @@ get_header();
 <h2>KAMPPROGRAM</h2>
 <div id="holder"></div>
     <template>
-      <article>     
-          <p class="lokation"></p>
+      <article> 
+            <p class="hold"></p>
+            <p class="modstander"></p>
+            <p class="lokation"></p>
+            <p class="tidspunkt"></p>
       </article>
     </template>
 
 	</main><!-- #main -->
 <script>
-	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/kampprogram/";
+	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/kampe_handbold?per_page=100";
 	let kampe_handbold =[];
 	const kamp_handboldTemp = document.querySelector("#holder");
 	const kamp_handboldListe = document.querySelector("#template");
@@ -40,9 +43,12 @@ get_header();
           console.log("kamp_handbold",kamp_handbold);
           const klon = skabelon.cloneNode(true).content;
           klon.querySelector(".lokation").textContent = kamp_handbold.lokation;
+          klon.querySelector(".hold").textContent = kamp_handbold.hold;
+          klon.querySelector(".modstander").textContent = kamp_handbold.modstander_;
+          klon.querySelector(".tidspunkt").textContent = kamp_handbold.tidspunkt_;
           holder.appendChild(klon);
         });
       }
 </script>
 
-get_footer();
+<?php get_footer(); ?>

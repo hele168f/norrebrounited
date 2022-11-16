@@ -14,16 +14,16 @@ get_header();
 <div id="holder"></div>
     <template>
       <article>  
-          <img src="" alt="">   
-          <h4></h4>
-          <p class="Beskrivelse"> </p>
+            <h4></h4>
+          <p class="tidspunkt"> </p>
+          <img src="" alt=""> 
       </article>
     </template>
 
 	</main><!-- #main -->
 <script>
-	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/nyheder/?per_page=100";
-	let merch =[];
+	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/nyhed/?per_page=100";
+	let nyhed =[];
 	const nyhederTemp = document.querySelector("#holder");
 	const nyhederListe = document.querySelector("#template");
 	getJson();
@@ -38,12 +38,12 @@ get_header();
         const holder = document.querySelector("#holder");
         const skabelon = document.querySelector("template");
 
-        json.forEach((nyhder) => {
-          console.log("nyhder",nyheder);
+        json.forEach((nyheder) => {
+          console.log("nyheder",nyheder);
           const klon = skabelon.cloneNode(true).content;
           klon.querySelector("img").src = nyheder.billede.guid;
-          klon.querySelector("h4").textContent = nyheder.title;
-          klon.querySelector(".bekribelse").textContent = nyheder.beskrivelse;
+          klon.querySelector("h4").textContent = nyheder.navn;
+          klon.querySelector(".tidspunkt").textContent = nyheder.tidspunkt;
           holder.appendChild(klon);
         });
       }

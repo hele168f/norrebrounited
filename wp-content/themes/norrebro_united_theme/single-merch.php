@@ -8,26 +8,30 @@
  */
 get_header();
 ?>
-    <section id="primary" class="content-area">
-	<main id="main-merch" class="site-main-merch">
-    
+
+	<main id="primary" class="site-main-produkt">
+    <h2>PRODUKTER</h2>
+    <div id="holder"></div>
+    <template>
       <article>  
           <img src="" alt="">  
           <p class="produkt_beskrivelse"> </p> 
           <h4></h4>
           <p class="produkt_pris"> </p>
       </article>
+    </template>
 
 	</main><!-- #main -->
 <script>
-    let produkt =[];
-
 	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/merch/"+<?php echo get_the_ID()?>;
-	
+	let produkt =[];
+	const produktTemp = document.querySelector("#holder");
+	const produktListe = document.querySelector("#template");
 	getJson();
 	async function getJson(){
-		const data = await fetch(siteUrl);
-		produkt = await data.json();
+		const response = await fetch(siteUrl);
+		produkt = await response.json();
+		console.log (produkt);
 		vis(produkt);
 	}
 
@@ -36,7 +40,7 @@ get_header();
         const skabelon = document.querySelector("template");
 
         json.forEach((produkt) => {
-          console.log("produkt", produkt);
+          console.log("produkt",produkt);
           const klon = skabelon.cloneNode(true).content;
           klon.querySelector("img").src = merch.billede.guid;
           klon.querySelector(".produkt_beskrivelse").textContent = merch.produktbeskrivelse;
@@ -46,6 +50,5 @@ get_header();
         });
       }
 </script>
-    </section>
 
 <?php get_footer(); ?>

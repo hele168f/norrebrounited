@@ -146,6 +146,7 @@ p {
 
 #holder img {
   max-width: 200px;
+  cursor: pointer;
 }
 .header-post-title-container {
   background-color: #d9e0df;
