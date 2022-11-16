@@ -9,29 +9,25 @@
 get_header();
 ?>
     <section id="primary" class="content-area">
-	<main id="primary" class="site-main-merch">
-    <h2>PRODUKTER</h2>
-    <div id="holder"></div>
-    <template>
+	<main id="main-merch" class="site-main-merch">
+    
       <article>  
           <img src="" alt="">  
           <p class="produkt_beskrivelse"> </p> 
           <h4></h4>
           <p class="produkt_pris"> </p>
       </article>
-    </template>
 
 	</main><!-- #main -->
 <script>
+    let produkt =[];
+
 	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/merch/"+<?php echo get_the_ID()?>;
-	let produkt =[];
-	const produktTemp = document.querySelector("#holder");
-	const produktListe = document.querySelector("#template");
+	
 	getJson();
 	async function getJson(){
-		const response = await fetch(siteUrl);
-		produkt = await response.json();
-		console.log (produkt);
+		const data = await fetch(siteUrl);
+		produkt = await data.json();
 		vis(produkt);
 	}
 
