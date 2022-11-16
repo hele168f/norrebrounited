@@ -64,9 +64,10 @@ p {
   padding: 4rem;
 }
  */
-.is-layout-flow .wp-block-column p {
+ /* nedenstående er blevet udkommenteret fordi det ændre teksten på andre sider - der skal laves noget class på den */
+/* .is-layout-flow .wp-block-column p {
   color: white;
-}
+} */
 
 .wp-block-columns {
   margin-bottom: 1px;
@@ -128,5 +129,5 @@ p {
   max-width: 200px;
 }
 .header-post-title-container {
-  color: #d9e0df;
+  background-color: #d9e0df;
 }
