@@ -10,11 +10,23 @@ Author:     Helena Nielsen, Monique Sørensen, Emilie Hundewadt, Caroline Thomse
 
 #main_edit {
   background-color: #ecefef;
-  padding: 5%;
+  padding: 5% 0%;
 }
 
 p {
   color: black;
+  max-width: 70ch;
+}
+
+
+
+/* CSS til forsiden */
+.wp-block-cover.is-light {
+    margin: 0 0 30px 0;
+}
+
+.wp-block-cover__inner-container {
+    margin-top: 250px;
 }
 
 #header-text-nav-container-edit {
