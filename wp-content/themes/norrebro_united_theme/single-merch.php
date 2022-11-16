@@ -8,13 +8,14 @@
  */
 get_header();
 ?>
-
+    <section id="primary" class="content-area">
 	<main id="primary" class="site-main-merch">
-  <h2>PRODUKTER</h2>
-  <div id="holder"></div>
+    <h2>PRODUKTER</h2>
+    <div id="holder"></div>
     <template>
       <article>  
-          <img src="" alt="">   
+          <img src="" alt="">  
+          <p class="produkt_beskrivelse"> </p> 
           <h4></h4>
           <p class="produkt_pris"> </p>
       </article>
@@ -22,34 +23,33 @@ get_header();
 
 	</main><!-- #main -->
 <script>
-	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/merch/?per_page=100";
-	let merch =[];
-	const merchTemp = document.querySelector("#holder");
-	const merchListe = document.querySelector("#template");
+	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/merch/"+<?php echo get_the_ID()?>;
+	let produkt =[];
+	const produktTemp = document.querySelector("#holder");
+	const produktListe = document.querySelector("#template");
 	getJson();
 	async function getJson(){
 		const response = await fetch(siteUrl);
-		merch = await response.json();
-		console.log (merch);
-		vis(merch);
+		produkt = await response.json();
+		console.log (produkt);
+		vis(produkt);
 	}
 
 	function vis(json) {
         const holder = document.querySelector("#holder");
         const skabelon = document.querySelector("template");
 
-        json.forEach((merch) => {
-          console.log("merch",merch);
+        json.forEach((produkt) => {
+          console.log("produkt", produkt);
           const klon = skabelon.cloneNode(true).content;
           klon.querySelector("img").src = merch.billede.guid;
-          klon.querySelector("h4").textContent = merch.produktnavn;
+          klon.querySelector(".produkt_beskrivelse").textContent = merch.produktbeskrivelse;
           klon.querySelector(".produkt_pris").textContent = merch.pris;
-          klon.querySelector("article").addEventListener("click", () => {
-            location.href = merch.link; 
-          })
+          
           holder.appendChild(klon);
         });
       }
 </script>
+    </section>
 
 <?php get_footer(); ?>
