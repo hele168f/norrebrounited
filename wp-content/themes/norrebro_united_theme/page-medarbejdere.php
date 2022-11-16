@@ -9,7 +9,7 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main-medarbejder">
 <h2>Medarbejdere</h2>
 <div id="holder"></div>
     <template>

@@ -18,6 +18,21 @@ p {
   max-width: 70ch;
 }
 
+#spacious-header-display-one.inner-wrap {
+    max-width: 1500px;
+}
+
+.breadcrumb {
+    float: left;
+    color:#000000;
+}
+.breadcrumb a {
+    color: #000000;
+}
+.header-post-title-class {
+    display: none;
+}
+
 
 
 /* CSS til forsiden */
@@ -66,17 +81,6 @@ p {
   padding-top: 35px;
 }
 
-/* Tilmeldning css */
-
-/* .post-33 {
-  padding: 4rem;
-}
- */
- /* nedenstående er blevet udkommenteret fordi det ændre teksten på andre sider - der skal laves noget class på den */
-/* .is-layout-flow .wp-block-column p {
-.is-layout-flow .wp-block-column p {
-  color: white;
-} */
 
 .wp-block-columns {
   margin-bottom: 1px;
@@ -91,9 +95,6 @@ p {
   padding: 10px;
 }
 
-.is-layout-flow .wp-block-column p {
-  color: white;
-}
 
 /* Header css */
 .main-navigation ul li ul {
@@ -148,4 +149,8 @@ p {
 }
 .header-post-title-container {
   background-color: #d9e0df;
+}
+
+.site-main-medarbejder {
+    background-color: #d9e0df;
 }

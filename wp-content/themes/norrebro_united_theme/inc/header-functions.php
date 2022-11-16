@@ -311,7 +311,7 @@ if ( ! function_exists( 'spacious_breadcrumb' ) ) :
 	function spacious_breadcrumb() {
 		if ( function_exists( 'bcn_display' ) ) {
 			echo '<div class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#">';
-			echo '<span class="breadcrumb-title">' . __( 'You are here: ', 'spacious' ) . '</span>';
+			echo '<span class="breadcrumb-title">' . __( 'Du er her: ', 'spacious' ) . '</span>';
 			bcn_display();
 			echo '</div> <!-- .breadcrumb : NavXT -->';
 
