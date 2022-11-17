@@ -21,6 +21,7 @@ get_header();
           <div class="text">
               <h4></h4>
             <p class="tidspunkt"> </p>
+            <p class="teaser"> </p>
           </div>
         </div>
       </article>
@@ -50,6 +51,8 @@ get_header();
           klon.querySelector("img").src = nyheder.billede.guid;
           klon.querySelector("h4").textContent = nyheder.navn;
           klon.querySelector(".tidspunkt").textContent = nyheder.tidspunkt;
+          klon.querySelector(".teaser").textContent = nyheder.teaser;
+          klon.querySelector("article").addEventListener("click", () => {location.href = nyheder.link; })
           holder.appendChild(klon);
         });
       }
