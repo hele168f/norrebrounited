@@ -21,12 +21,13 @@
             <p>Nørrebro United </p>
             <p>Tlf nr. 60 79 61 40 </p>
             <p>kontor@nbunited.dk </p>
-            <p>Husumgade 44, baghuset - 2200 København N</p>
-            <p>cvr. 32435327 - Bank reg nr. 1551 konto nr. 4190286185</p>
+            
         </div>
 
         <div id="udmeld-info">
             <p> Klik HER for udmeldning </p>
+            <p>Husumgade 44, baghuset - 2200 København N</p>
+            <p>cvr. 32435327 - Bank reg nr. 1551 konto nr. 4190286185</p>
         </div>
     </div>
 </footer>
