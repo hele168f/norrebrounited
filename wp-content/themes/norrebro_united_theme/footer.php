@@ -17,6 +17,7 @@
 <footer id="colophon" class="clearfix">
 	<?php get_sidebar( 'footer' ); ?>
     <div id="footer-body">
+        
 	    <div id="kontakt-info">
             <p>Nørrebro United </p>
             <p>Tlf nr. 60 79 61 40 </p>
