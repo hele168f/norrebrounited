@@ -175,3 +175,13 @@ p {
 .wp-block-columns {
   margin-bottom: 5%;
 }
+
+
+
+
+/* NYHEDER CSS */
+.nyheder-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}

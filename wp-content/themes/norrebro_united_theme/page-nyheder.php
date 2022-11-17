@@ -14,13 +14,15 @@ get_header();
 <div id="hold"></div>
     <template>
       <article>  
-        <div class="text">
-            <h4></h4>
-          <p class="tidspunkt"> </p>
+        <div class="nyheder-container">
+          <div class="text">
+              <h4></h4>
+            <p class="tidspunkt"> </p>
           </div>
           <div class="ny-pic"> 
-          <img src="" alt=""> 
-           </div>
+            <img src="" alt=""> 
+          </div>
+        </div>
       </article>
     </template>
 
