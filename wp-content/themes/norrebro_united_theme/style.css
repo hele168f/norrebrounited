@@ -19,25 +19,23 @@ p {
 }
 
 #spacious-header-display-one.inner-wrap {
-    max-width: 1400px;
+  max-width: 1400px;
 }
 
 .breadcrumb {
-    float: left;
-    color:#000000;
+  float: left;
+  color: #000000;
 }
 .breadcrumb a {
-    color: #000000;
+  color: #000000;
 }
 .header-post-title-class {
-    display: none;
+  display: none;
 }
-
-
 
 /* CSS til forsiden */
 .wp-block-cover.is-light {
-    margin: 0 0 30px 0;
+  margin: 0 0 30px 0;
 }
 
 #header-text-nav-container-edit {
@@ -81,7 +79,6 @@ p {
   padding-top: 35px;
 }
 
-
 .wp-block-columns {
   margin-bottom: 1px;
 }
@@ -94,7 +91,6 @@ p {
   width: 100%;
   padding: 10px;
 }
-
 
 /* Header css */
 .main-navigation ul li ul {
@@ -153,5 +149,12 @@ p {
 }
 
 .site-main-medarbejder {
-    background-color: #d9e0df;
+  background-color: #d9e0df;
+}
+
+#hold {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
 }
