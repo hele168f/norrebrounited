@@ -24,7 +24,7 @@ get_header();
 <script>
 	const siteUrl = "https://helenaadelaide.dk/kea/09_cms/norrebrounited/wp-json/wp/v2/nyhed/?per_page=100";
 	let nyhed =[];
-	const nyhederTemp = document.querySelector("#holder");
+	const nyhederTemp = document.querySelector("#hold");
 	const nyhederListe = document.querySelector("#template");
 	getJson();
 	async function getJson(){
@@ -35,7 +35,7 @@ get_header();
 	}
 
 	function vis(json) {
-        const holder = document.querySelector("#holder");
+        const holder = document.querySelector("#hold");
         const skabelon = document.querySelector("template");
 
         json.forEach((nyheder) => {
