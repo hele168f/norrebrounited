@@ -162,3 +162,6 @@ p {
   max-width: 200px;
   cursor: pointer;
 }
+.wp-block-columns {
+  margin-bottom: 5%;
+}
