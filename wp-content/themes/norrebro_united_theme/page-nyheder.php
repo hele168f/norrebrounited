@@ -15,12 +15,12 @@ get_header();
     <template>
       <article>  
         <div class="nyheder-container">
+          <div class="ny-pic"> 
+            <img src="" alt=""> 
+          </div>
           <div class="text">
               <h4></h4>
             <p class="tidspunkt"> </p>
-          </div>
-          <div class="ny-pic"> 
-            <img src="" alt=""> 
           </div>
         </div>
       </article>
