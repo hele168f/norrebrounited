@@ -11,7 +11,7 @@ get_header();
 
 	<main id="primary" class="site-main-nyheder">
 <h2>NYHEDER</h2>
-<div id="holder"></div>
+<div id="hold"></div>
     <template>
       <article>  
             <h4></h4>
