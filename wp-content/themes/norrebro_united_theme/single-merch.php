@@ -10,14 +10,21 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main-produkt">
-    <h2>PRODUKTER</h2>
-    <div id="holder"></div>
+
+    <div id="singe-view-produkt"></div>
       <article>  
-          <img src="" alt="">  
-          <p class="produkt_beskrivelse"> </p> 
-          <h4></h4>
-          <p class="produkt_pris"> </p>
-      </article>
+            <div class="produkt-container">
+                <div class="produkt-billede"> 
+                    <img class="pic" src="" alt="">
+                </div>
+                <div class="produkt-tekst">
+                    <h3 class="produkt_navn"> </h3> 
+                    <p class="produkt_beskrivelse"> </p> 
+                    <p class="produkt_pris"> </p>
+                </div>
+            </div>
+
+        </article>
 
 	</main><!-- #main -->
 <script>
@@ -36,7 +43,8 @@ get_header();
 	function vis() {
 
           console.log("produkt",produkt);
-          document.querySelector("img").src = produkt.billede.guid;
+          document.querySelector(".pic").src = produkt.billede.guid;
+          document.querySelector(".produkt_navn").textContent = produkt.title.rendered;
           document.querySelector(".produkt_beskrivelse").textContent = produkt.produktbeskrivelse;
           document.querySelector(".produkt_pris").textContent = produkt.pris;
       }

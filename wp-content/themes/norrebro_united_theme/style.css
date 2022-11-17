@@ -162,3 +162,13 @@ p {
   max-width: 200px;
   cursor: pointer;
 }
+
+
+
+
+/* MERCH CSS */
+.produkt-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
