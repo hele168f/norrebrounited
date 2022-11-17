@@ -33,6 +33,11 @@ p {
   display: none;
 }
 
+
+
+
+
+
 /* CSS til forsiden */
 .wp-block-cover.is-light {
   margin: 0 0 30px 0;
@@ -50,9 +55,9 @@ p {
   color: white;
 }
 
-.main-navigation ul li ul {
+/* .main-navigation ul li ul {
   background-color: #304941;
-}
+} */
 
 .menu-primary-container #menu-hovedmenu #menu-item-88 {
   display: none;
@@ -95,6 +100,11 @@ p {
 /* Header css */
 .main-navigation ul li ul {
   background-color: #ee772f;
+}
+
+#site-navigation-edit .menu-primary-container #menu-hovedmenu li ul li a {
+    color: #304941;
+    font-weight: 600;
 }
 .sub-menu li a {
   color: black;
@@ -203,4 +213,12 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+}
+
+
+
+
+/* FODBOLD CSS */
+.trænerTS{
+    padding-top: 30px;
 }
