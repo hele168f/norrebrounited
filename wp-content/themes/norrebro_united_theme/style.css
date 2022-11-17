@@ -172,3 +172,6 @@ p {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
+.wp-block-columns {
+  margin-bottom: 5%;
+}
