@@ -226,3 +226,12 @@ p {
 .trænerTS{
     padding-top: 30px;
 }
+
+.infocon p {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.is-layout-flex {
+    margin-top: 50px;
+}

@@ -235,9 +235,11 @@ if ( function_exists( 'wp_body_open' ) ) {
 							}
 							?>
 						</div>
-						<?php if ( function_exists( 'spacious_breadcrumb' ) ) {
-							spacious_breadcrumb();
-						} ?>
+						<?php
+							if ( function_exists('yoast_breadcrumb') ) {
+  								yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+								}
+								?>
 					</div>
 				</div>
 				<?php
@@ -249,3 +251,6 @@ if ( function_exists( 'wp_body_open' ) ) {
 	<?php do_action( 'spacious_before_main' ); ?>
 	<div id="main_edit" class="clearfix">
 		<div class="inner-wrap">
+
+	
+
