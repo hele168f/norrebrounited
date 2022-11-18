@@ -33,11 +33,6 @@ p {
   display: none;
 }
 
-
-
-
-
-
 /* FORSIDE CSS */
 .wp-block-cover.is-light {
   margin: 0 0 30px 0;
@@ -103,15 +98,15 @@ p {
 }
 
 #site-navigation-edit .menu-primary-container #menu-hovedmenu li ul li a {
-    color: #304941;
-    font-weight: 600;
+  color: #304941;
+  font-weight: 600;
 }
 .sub-menu li a {
   color: black;
 }
 
 #menu-hovedmenu li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* footer css */
@@ -177,52 +172,45 @@ p {
   cursor: pointer;
 }
 
-
-
-
 /* MERCH CSS */
 .produkt-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 .wp-block-columns {
   margin-bottom: 3%;
 }
 
 #filtrering button {
-    background-color: #ee772f;
-    color: #304941;
-    box-shadow: none;
-    text-decoration: none;
-    padding: calc(0.667em + 2px) calc(1.333em + 2px);
-    font-size: 1.125em;
-    cursor: pointer;
-    margin-right: 30px;
-    border-radius: 30px;
+  background-color: #ee772f;
+  color: #304941;
+  box-shadow: none;
+  text-decoration: none;
+  padding: calc(0.667em + 2px) calc(1.333em + 2px);
+  font-size: 1.125em;
+  cursor: pointer;
+  margin-right: 30px;
+  border-radius: 30px;
 }
 
 #filtrering button:hover {
-    opacity: 0.6
+  opacity: 0.6;
 }
 
 #filtrering {
-    text-align: center;
+  text-align: center;
 }
-
-
 
 /* NYHEDER CSS */
 .nyheder-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  cursor: pointer;
 }
 
-
-
-
 /* FODBOLD CSS */
-.trænerTS{
-    padding-top: 30px;
+.trænerTS {
+  padding-top: 30px;
 }
