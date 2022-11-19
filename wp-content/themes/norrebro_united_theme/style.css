@@ -211,15 +211,15 @@ p {
 }
 
 /* FODBOLD CSS */
-.trænerTS{
-    padding-top: 30px;
+.trænerTS {
+  padding-top: 30px;
 }
 
-.infocon p {
-    text-align: center;
-    margin: 0 auto;
+.infocon p .has-text-align-center {
+  text-align: center;
+  margin: 0 auto;
 }
 
 .is-layout-flex {
-    margin-top: 50px;
+  margin-top: 3%;
 }
