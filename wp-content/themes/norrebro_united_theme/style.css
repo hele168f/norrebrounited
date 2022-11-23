@@ -50,6 +50,25 @@ p {
   color: white;
 }
 
+.is-layout-flow .wp-block-column .wp-block-cover .wp-block-cover__inner-container p a:hover {
+  text-decoration: underline;
+}
+
+
+
+.wp-block-cover {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.wp-block-cover img {
+  transition: transform .9s ease;
+}
+
+.wp-block-cover:hover img {
+  transform: scale(1.1);
+}
+
 /* .main-navigation ul li ul {
   background-color: #304941;
 } */
@@ -64,6 +83,11 @@ p {
 
 .has-text-align-center a {
   color: white;
+}
+
+.h1overskrift {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 #header-logo-image a img {
@@ -112,6 +136,7 @@ p {
 /* footer css */
 #kontakt-info {
   text-align: center;
+  margin: 0 auto;
 }
 
 #footer-body {
@@ -120,10 +145,12 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+  text-align: center;
 }
 
 #udmeld-info {
   text-align: center;
+  margin: 0 auto;
 }
 
 #kontakt-info p {
@@ -172,10 +199,10 @@ p {
 #hold {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 60px;
 }
 #hold img {
-  max-width: 200px;
+  max-width: 100%;
   cursor: pointer;
 }
 
@@ -227,6 +254,7 @@ p {
   margin: 0 auto;
 }
 
-.is-layout-flex {
-  margin-top: 3%;
+.infocon p {
+  margin: 0 auto;
 }
+
