@@ -54,11 +54,14 @@ p {
   text-decoration: underline;
 }
 
+#site-navigation-edit {
+  padding-right: 20px;
+}
+
 
 
 .wp-block-cover {
   overflow: hidden;
-  cursor: pointer;
 }
 
 .wp-block-cover img {
